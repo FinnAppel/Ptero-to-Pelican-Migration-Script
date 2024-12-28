@@ -1,13 +1,12 @@
 # Pterodactyl to Pelican Panel Migration Script
 
-This repository contains a migration script to help users transition from **Pterodactyl Panel** to **Pelican Panel**. The script is designed to simplify the migration process by automating key tasks while ensuring a backup of your existing Pterodactyl installation.
+This repository contains a migration script to help users transition from **Pterodactyl Panel** to **Pelican Panel**.
 
 > **Warning:** The migration script is in its **beta phase**, and **Pelican Panel** is also in its early development stages. Use this script at your own risk.
 
 
 ## Features
 - Automatically migrates your Pterodactyl setup to Pelican Panel.
-- Creates a **backup** of your current Pterodactyl installation to allow recovery in case of issues.
 - Streamlined migration process to get you up and running with Pelican Panel quickly.
 
 ## Installation
@@ -17,10 +16,9 @@ curl -sSL https://raw.githubusercontent.com/FinnAppel/Ptero-to-Pelican-Migration
 ```
 
 ## Important Notes
-- **Backup Creation**: The script will create a full backup of your existing Pterodactyl installation. The backup will be stored in a `backups` directory within the same folder as the script.
 - **Beta Status**: Both the script and Pelican Panel are in their early stages of development. Bugs and issues may occur.
 - **Liability**: I am not responsible for any damage or data loss that may occur during or after the migration process. Use at your own risk.
-- **Tested**: Tested on Ubuntu 22.04, other might not yet work. 
+- **Compatability**: Tested on Ubuntu 22.04, other might not yet work. 
 
 
 ## Contribution
