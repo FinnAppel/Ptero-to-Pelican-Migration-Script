@@ -78,8 +78,6 @@ continue_confirm=${continue_confirm:-y}
   cp "$env_file" "$backup_dir/.env.backup"
 fi
 
-# Backup current panel
-cp -r /var/www/pterodactyl /var/www/pterodactylbackup
 
 IS_DEBIAN=$(lsb_release -a 2>/dev/null | grep -i "debian" > /dev/null && echo "yes" || echo "no")
 if [[ "$OS" == "Ubuntu"* || "$OS" == "Debian"* ]]; then
