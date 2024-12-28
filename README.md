@@ -18,7 +18,7 @@ curl -sSL https://raw.githubusercontent.com/FinnAppel/Ptero-to-Pelican-Migration
 ## Important Notes
 - **Beta Status**: Both the script and Pelican Panel are in their early stages of development. Bugs and issues may occur.
 - **Liability**: I am not responsible for any damage or data loss that may occur during or after the migration process. Use at your own risk.
-- **Compatability**: Tested on Ubuntu 22.04, other might not yet work. 
+- **Compatibility**: Tested on Ubuntu 22.04, other might not yet work. 
 
 
 ## Contribution
