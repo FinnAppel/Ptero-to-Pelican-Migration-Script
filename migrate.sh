@@ -206,7 +206,7 @@ php artisan up
 echo " "
 echo "Migration from Pterodactyl to Pelican has been completed."
 echo "If this was helpful consider leaving a star on my GitHub repository."
-echo "If you get a database error when creating one, go to your admin settings and database and link your database to ypur node."
+echo "If you get a database error when creating one, go to your admin settings and link your database to your node."
 exit 0
 ;;
 
