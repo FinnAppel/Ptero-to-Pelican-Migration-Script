@@ -31,10 +31,9 @@ echo "======================================"
 echo "    Pelican Migration Script"
 echo "======================================"
 echo "1. Migrate to Pelican"
-echo "2. Update Pelican"
-echo "3. Exit"
+echo "2. Exit"
 echo "======================================"
-read -p "Please choose an option (1/2/3): " choice
+read -p "Please choose an option (1/2): " choice
 
 
 case $choice in
@@ -209,41 +208,11 @@ php artisan up
 echo " "
 echo "Migration from Pterodactyl to Pelican has been completed."
 echo "If this was helpful consider leaving a star on my GitHub repository."
+echo "If you get a database error when creating one, go to your admin settings and database and link your database to ypur node."
 exit 0
 ;;
 
   2)
-    echo "Update Pelican"
-
-cd /var/www/pelican
-php artisan down
-
-echo "Downloading Files..."
-curl -L https://github.com/pelican-dev/panel/releases/latest/download/panel.tar.gz | sudo tar -xzv
-
-echo "Setting Permissions"
-chmod -R 755 storage/* bootstrap/cache
-
-echo "Installing Composer"
-composer install --no-dev --optimize-autoloader
-
-echo "Updating database"
-php artisan view:clear
-php artisan config:clear
-php artisan migrate --seed --force
-
-echo "Optimizing Filament"
-php artisan filament:optimize
-
-echo "Setting ownership of the web server"
-chown -R "$WEBSERVER_USER":"$WEBSERVER_GROUP" /var/www/pelican/*
-php artisan queue:restart
-php artisan up
-exit 0 
-;;
-
-
-  3)
     # Exit
     echo "Exiting..."
     exit 0
