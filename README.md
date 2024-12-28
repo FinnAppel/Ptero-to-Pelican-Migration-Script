@@ -27,6 +27,7 @@ curl -sSL https://raw.githubusercontent.com/FinnAppel/Ptero-to-Pelican-Migration
 - **Backup Creation**: The script will create a full backup of your existing Pterodactyl installation. The backup will be stored in a `backups` directory within the same folder as the script.
 - **Beta Status**: Both the script and Pelican Panel are in their early stages of development. Bugs and issues may occur.
 - **Liability**: I am not responsible for any damage or data loss that may occur during or after the migration process. Use at your own risk.
+- **Tested**: Tested on Ubuntu 22.04, other might not yet work. 
 
 
 ## Contribution
