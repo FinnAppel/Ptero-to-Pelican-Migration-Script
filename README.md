@@ -10,13 +10,6 @@ This repository contains a migration script to help users transition from **Pter
 - Creates a **backup** of your current Pterodactyl installation to allow recovery in case of issues.
 - Streamlined migration process to get you up and running with Pelican Panel quickly.
 
-
-## Prerequisites
-1. A working Pterodactyl installation.
-2. Administrative access to your server.
-3. Basic knowledge of server management.
-
-
 ## Installation
 
 ```bash
