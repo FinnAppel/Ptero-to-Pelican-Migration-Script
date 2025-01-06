@@ -120,6 +120,7 @@ chown -R www-data:www-data /var/www/pelican
 echo "Adding more dependencies"
 sleep 1
 apt update
+apt -y install php8.3 php8.3-{common,cli,gd,mysql,mbstring,bcmath,xml,fpm,curl,zip} mariadb-server nginx tar unzip git redis-server
 apt install php8.3-intl php8.3-sqlite3
 systemctl stop php8.3-fpm
 
@@ -180,6 +181,11 @@ sudo sed -i 's/pterodactyl/pelican/g' /etc/nginx/sites-available/pelican.conf
 echo "Creating new symbolic link"
 sleep 1
 sudo ln -s /etc/nginx/sites-available/pelican.conf /etc/nginx/sites-enabled/pelican.conf
+
+# Change PHP 8.1 to 8.3
+echo "Update PHP 8.1 to 8.3"
+sleep 1
+sudo sed -i 's/php8.1/php8.3/g' /etc/nginx/sites-available/pelican.conf
 
 # Start services after migration
 echo "Starting services"
