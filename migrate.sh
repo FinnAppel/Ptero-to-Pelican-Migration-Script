@@ -107,7 +107,7 @@ mv /var/www/pterodactyl /var/www/pelican
 
 echo "Downloading Files..."
 sleep 2
-curl -L https://github.com/pelican-dev/panel/releases/download/v1.0.0-beta16/panel.tar.gz | sudo tar -xzv -C "$PELICAN_DIR"
+curl -L https://github.com/pelican-dev/panel/releases/download/v1.0.0-beta17/panel.tar.gz | sudo tar -xzv -C "$PELICAN_DIR"
 
 echo "Setting Permissions"
 sleep 2
