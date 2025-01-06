@@ -25,19 +25,6 @@ echo "======================================"
 echo 
 sleep 2
 
-# Show the initial menu
-clear
-echo "======================================"
-echo "    Pelican Migration Script"
-echo "======================================"
-echo "1. Migrate to Pelican"
-echo "2. Exit"
-echo "======================================"
-read -p "Please choose an option (1/2): " choice
-
-
-case $choice in
-  1)
 
     if [ -d "$PELICAN_DIR" ]; then
       echo "Pelican is already detected at $PELICAN_DIR. Migration cannot continue."
@@ -208,17 +195,4 @@ echo "Migration from Pterodactyl to Pelican has been completed."
 echo "If this was helpful consider leaving a star on my GitHub repository."
 echo "If you get a database error when creating one, go to your admin settings and link your database to your node."
 exit 0
-;;
-
-  2)
-    # Exit
-    echo "Exiting..."
-    exit 0
-    ;;
-
-  *)
-    echo "Invalid choice. Exiting."
-    exit 1
-    ;;
-esac
 
