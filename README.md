@@ -24,7 +24,7 @@ curl -sSL https://raw.githubusercontent.com/FinnAppel/Ptero-to-Pelican-Migration
 
 | Linux Distro | Supported Versions | Support          |
 | ------------ | ------------------ | ---------------- |
-| Ubuntu       | 22.04              | ✅ Supported |
+| Ubuntu       | 24.04, 22.04       | ✅ Supported |
 | Debian       | None               | :x: Unsupported  |
 | CentOS       | None               | :x: Unsupported  |
 
